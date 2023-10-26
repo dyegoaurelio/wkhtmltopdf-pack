@@ -1,0 +1,6 @@
+[project]
+name = "wkhtmltopdf-pack"
+version = "0.12.3.0.post1"
+
+[tool.setuptools]
+py-modules = ['lib', 'include']
