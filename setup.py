@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="wkhtmltopdf-pack",
-    version="0.12.3.0.post1",
+    version="0.99",
     url="https://github.com/illarra/wkhtmltopdf-pack",
     author="illarra",
     author_email="team@illarra.com",
@@ -11,8 +11,6 @@ setup(
         (
             "bin",
             [
-                "bin/wkhtmltopdf-pack",
-                # "bin/wkhtmltopdf-mod",
                 "bin/wkhtmltopdf-centos",
                 "lib/libwkhtmltox.so",
                 "lib/libjpeg.so.62",
@@ -21,9 +19,6 @@ setup(
                 "lib/libX11.so.6",
                 "lib/libxcb.so.1",
                 "lib/libXau.so.6",
-                # "lib/libwkhtmltox.so.0",
-                # "lib/libwkhtmltox.so.0.12",
-                # "lib/libwkhtmltox.so.0.12.6",
             ],
         )
     ],
