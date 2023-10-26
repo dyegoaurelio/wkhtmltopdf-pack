@@ -18,6 +18,7 @@ setup(
                 "lib/libjpeg.so.62",
                 "lib/libXrender.so.1",
                 "lib/libXext.so.6",
+                "lib/libX11.so.6",
                 # "lib/libwkhtmltox.so.0",
                 # "lib/libwkhtmltox.so.0.12",
                 # "lib/libwkhtmltox.so.0.12.6",
