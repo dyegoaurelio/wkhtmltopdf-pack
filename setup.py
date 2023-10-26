@@ -7,7 +7,7 @@ setup(
     author='illarra',
     author_email='team@illarra.com',
     license='MIT',
-    data_files=[('bin', ['bin/wkhtmltopdf-pack', 'bin/wkhtmltopdf-mod'])],
+    data_files=[('bin', ['bin/wkhtmltopdf-pack', 'bin/wkhtmltopdf-mod', 'bin/wkhtmltopdf-centos'])],
     description='wkhtmltopdf 0.12.3.0 for Python on Heroku buildpacks',
     long_description=open('README.rst').read(),
     keywords='pdf wkhtmltopdf paas heroku cloudcontrol buildpack',
