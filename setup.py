@@ -12,12 +12,12 @@ setup(
             "bin",
             [
                 "bin/wkhtmltopdf-pack",
-                "bin/wkhtmltopdf-mod",
+                # "bin/wkhtmltopdf-mod",
                 "bin/wkhtmltopdf-centos",
                 "lib/libwkhtmltox.so",
-                "lib/libwkhtmltox.so.0",
-                "lib/libwkhtmltox.so.0.12",
-                "lib/libwkhtmltox.so.0.12.6",
+                # "lib/libwkhtmltox.so.0",
+                # "lib/libwkhtmltox.so.0.12",
+                # "lib/libwkhtmltox.so.0.12.6",
             ],
         )
     ],
