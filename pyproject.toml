@@ -21,15 +21,3 @@ classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 urls = { "Homepage" = "https://github.com/illarra/wkhtmltopdf-pack" }
-
-[tool.setuptools]
-data-files = [
-    { file = "bin/wkhtmltopdf-centos", directory = "bin" },
-    { file = "lib/libwkhtmltox.so", directory = "lib" },
-    { file = "lib/libjpeg.so.62", directory = "lib" },
-    { file = "lib/libXrender.so.1", directory = "lib" },
-    { file = "lib/libXext.so.6", directory = "lib" },
-    { file = "lib/libX11.so.6", directory = "lib" },
-    { file = "lib/libxcb.so.1", directory = "lib" },
-    { file = "lib/libXau.so.6", directory = "lib" },
-]
