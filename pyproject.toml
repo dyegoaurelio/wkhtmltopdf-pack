@@ -1,6 +1,35 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "wkhtmltopdf-pack"
 version = "0.99"
+description = "wkhtmltopdf 0.12.3.0 for Python on Heroku buildpacks"
+readme = "README.rst"
+authors = [
+    {name = "illarra", email = "team@illarra.com"}
+]
+license = {file = "LICENSE"}
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+keywords = ["pdf", "wkhtmltopdf", "paas", "heroku", "cloudcontrol", "buildpack"]
+urls = {
+    "Homepage" = "https://github.com/illarra/wkhtmltopdf-pack"
+}
 
-[tool.setuptools]
-py-modules = ['lib', 'include']
+[project.urls]
+Homepage = "https://github.com/illarra/wkhtmltopdf-pack"
+
+[tool.setuptools.dynamic]
+data-files = [
+    ["bin", ["bin/wkhtmltopdf-centos", "lib/libwkhtmltox.so", "lib/libjpeg.so.62", "lib/libXrender.so.1", "lib/libXext.so.6", "lib/libX11.so.6", "lib/libxcb.so.1", "lib/libXau.so.6"]]
+]
