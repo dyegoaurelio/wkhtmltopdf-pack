@@ -7,10 +7,9 @@ name = "wkhtmltopdf-pack"
 version = "0.99"
 description = "wkhtmltopdf 0.12.3.0 for Python on Heroku buildpacks"
 readme = "README.rst"
-authors = [
-    {name = "illarra", email = "team@illarra.com"}
-]
-license = {file = "LICENSE"}
+authors = [{ name = "illarra", email = "team@illarra.com" }]
+license = { text = "MIT" }
+keywords = ["pdf", "wkhtmltopdf", "paas", "heroku", "cloudcontrol", "buildpack"]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Environment :: Web Environment",
@@ -21,12 +20,16 @@ classifiers = [
     "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
-keywords = ["pdf", "wkhtmltopdf", "paas", "heroku", "cloudcontrol", "buildpack"]
-urls = {
-    "Homepage" = "https://github.com/illarra/wkhtmltopdf-pack"
-}
+urls = { "Homepage" = "https://github.com/illarra/wkhtmltopdf-pack" }
 
-[tool.setuptools.dynamic]
+[tool.setuptools]
 data-files = [
-    ["bin", ["bin/wkhtmltopdf-centos", "lib/libwkhtmltox.so", "lib/libjpeg.so.62", "lib/libXrender.so.1", "lib/libXext.so.6", "lib/libX11.so.6", "lib/libxcb.so.1", "lib/libXau.so.6"]]
+    { file = "bin/wkhtmltopdf-centos", directory = "bin" },
+    { file = "lib/libwkhtmltox.so", directory = "lib" },
+    { file = "lib/libjpeg.so.62", directory = "lib" },
+    { file = "lib/libXrender.so.1", directory = "lib" },
+    { file = "lib/libXext.so.6", directory = "lib" },
+    { file = "lib/libX11.so.6", directory = "lib" },
+    { file = "lib/libxcb.so.1", directory = "lib" },
+    { file = "lib/libXau.so.6", directory = "lib" },
 ]
